@@ -1,0 +1,305 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #322c50;
+    padding: 10px 0;
+    color: white;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #3498DB; /* Light blue on hover */
+  }
+  
+  /* Background Gradient */
+  body {
+    background: linear-gradient(to right, #3498DB, #8E44AD);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+  }
+  
+  /* Intro Section */
+  #intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .profile {
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile img {
+    border-radius: 50%;
+    width: 200px; /* Adjust the size of the profile image */
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .profile h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .profile h1 span {
+    color: #3498DB;
+  }
+  
+  .profile p {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  /* Social Links */
+  .social-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-links ul li {
+    margin: 0 15px;
+  }
+  
+  .social-links ul li a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links ul li a:hover {
+    color: #F39C12; /* Hover effect for icons */
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .footer-contact a {
+    color: #3498DB;
+    text-decoration: none;
+  }
+  
+  .footer-contact a:hover {
+    color: #F39C12;
+  }
+  /* Gallery Section */
+#gallery {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #gallery h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white; /* Ensure the header color stands out */
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Spacing between items */
+    margin-top: 30px;
+  }
+  
+  .gallery-item {
+    background-color: #2C3E50; /* Background color of each item */
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-item img {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.1); /* Zoom-in effect for the image */
+  }
+  /* Bio Data Section */
+#bio-data {
+    padding: 50px 20px; /* Padding around the section */
+    background-color: #F5B041; /* Soft background color for bio data */
+    border-radius: 10px; /* Rounded corners for the section */
+    margin-top: 50px; /* Space from the previous section */
+    max-width: 800px; /* Limit the width for a more organized look */
+    margin-left: auto;
+    margin-right: auto; /* Centering the section */
+  }
+  
+  .about {
+    background-color: #FFFFFF; /* White background for the box inside */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 8px; /* Rounded corners for the box */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slight shadow around the box */
+  }
+  
+  .about  h2 {
+    font-size: 32px;
+    text-align: center; /* Center align the title */
+    color: #2C3E50; /* Dark color for the title */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .about ul {
+    list-style: none; /* Removing the default list styles */
+    padding-left: 0;
+  }
+  
+  ..about ul li {
+    font-size: 18px; /* Make the text readable */
+    color: #2C3E50; /* Dark color for the text */
+    margin-bottom: 10px; /* Space between each list item */
+  }
+  
+  .bio-box ul li a {
+    color: #3498DB; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .bio-box ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+ 
+  /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  /* Home Page */
+  #intro {
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  #contact {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .profile {
+        text-align: center;
+    }
+}
+nav ul li a.active {
+    color: #ff5733;
+    font-weight: bold;
+}
+ 
